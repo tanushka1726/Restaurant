@@ -33,7 +33,7 @@ const resSchema = new mongoose.Schema(
         address:{
             street: { type: String, required: true },
             city: { type: String, required: true },
-            state: { type: String, uppercase: true, minlength: 2, maxlength: 2 },
+            state: { type: String},
             zip: { type: Number, required: true }
         },
         status:{
